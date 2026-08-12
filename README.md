@@ -1,2 +1,2 @@
 # JavaScript
-Curso de JS com o GG da Curso em Video
+Curso de JS na Udemy e posterior aprendizado com o Gustavo Guanabara para complementar os fundamentos.
