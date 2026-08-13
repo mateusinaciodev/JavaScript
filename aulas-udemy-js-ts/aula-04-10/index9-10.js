@@ -23,3 +23,42 @@ const b = a; //object
 console.log(a, b);
 b.push(4);
 console.log(a, b); //a e b apontam para o mesmo endereço de memória, então quando alteramos b, a também é alterado
+
+//  Aritmetic Operators + - / * % **
+//  + = adição e concatenação(unir dois valores)
+//  ** = potenciação, % = resto da divisão
+
+// ordem de precedência: () ** * / % + -
+
+/*  Operadores de atribuição = += -= *= /= **= %=
+    = atribuição simples, += atribuição de adição, -= atribuição de subtração, *= atribuição de multiplicação, /= atribuição de divisão, **= atribuição de potenciação, %= atribuição de resto da divisão
+
+    Operadores de comparação == != === !== > < >= <= 
+    == compara apenas o valor, != compara apenas o valor, === compara o valor e o tipo, !== compara o valor e o tipo, > maior que, < menor que, >= maior ou igual a, <= menor ou igual a */
+
+    let contador = 1;
+    console.log(contador);
+    contador++; //incremento, contador = contador + 1
+    console.log(contador);
+    contador--; //decremento, contador = contador - 1
+    console.log(contador);
+
+    let contador2 = 2;
+    console.log(++contador2); //incremento, contador2 = contador2 + 1
+    console.log(contador2);
+    
+    const passo = 2;
+    let contador3 = 0;
+
+    contador3 += passo; //contador3 = contador3 + passo
+    console.log('o número é: ' + contador3);
+    contador3 += passo;
+    console.log('o número é: ' + contador3);
+    contador3 += passo;
+    console.log('o número é: ' + contador3);
+
+    // NaN = Not a Number, quando tentamos realizar uma operação matemática com um valor que não é um número, o JavaScript retorna NaN. Exemplo: 10 * 'Luiz' = NaN
+    const number1 = 10;
+    const number2 = Number('5'); //Number() converte uma string em um número
+    const number3 = parseInt('5'); //parseInt() converte uma string em um número inteiro
+    const number4 = parseFloat('5.2'); //parseFloat() converte uma string em um número de ponto flutuante
