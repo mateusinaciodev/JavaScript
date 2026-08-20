@@ -19,3 +19,18 @@ console.log(umaString2.split(" ")); // split retorna um array com as palavras da
 console.log(umaString.toUpperCase()); // toUpperCase retorna a string em maiúsculas
 console.log(umaString.toLowerCase()); // toLowerCase retorna a string em minúsculas
 console.log(umaString2.trim()); // trim remove os espaços em branco do início e do fim da string  
+
+//Conteudo Aula 26 - Padrão motor JS - IEEE 754-2008
+let num1 = 10;
+let num2 = 2.5;
+console.log(num1.toString() + num2); // toString converte o número em string, então o resultado é "102.5"
+console.log(num1.toString(2)); // toString(2) converte o número em binário, então o resultado é "1010"
+console.log(num1.toFixed(2)); // toFixed retorna o número com 2 casas decimais, então o resultado é "10.00"
+console.log(Number.isInteger(num1)); // isInteger verifica se o número é inteiro, então o resultado é true
+let num3 = 0.7;
+let num4 = 0.1;
+num3 += num4;
+num3 += num4;
+num3 += num4;
+console.log(num3); // 0.999999
+console.log(num3.toFixed(1));
