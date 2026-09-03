@@ -1,0 +1,90 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+:root 
+/*:root é uma variável global do CSS para armazenar valores reutilizáveis */
+{
+    --cor-fundo: rgb(17, 86, 102, 0.8);
+    --cor-destaque: rgb(8, 31, 37);
+    --cor-texto: #fff;
+    --cor-borda: #000;
+}
+
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none; /* Remove o contorno ao focar */
+}
+
+body
+{
+    font-family: 'Roboto', sans-serif;
+    background-color: var(--cor-fundo);
+    font-size: 1.3em;
+    line-height: 1.5em;
+}
+
+.container
+{
+    max-width: 640px;
+    margin: 50px auto;
+    padding: 20px;
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+form input[type="text"], form input[type="number"]
+{
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid var(--cor-borda);
+    border-radius: 4px;
+}
+
+form input[type="submit"]
+{
+    background-color: var(--cor-fundo);
+    color: var(--cor-texto);
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+form input[type="submit"]:hover
+{
+    background-color: var(--cor-destaque);
+}
+
+form input:focus
+/*focus serve para indicar o elemento que está com foco */
+{
+    outline: 2px solid var(--cor-fundo);
+    outline-offset: 2px;
+}
+
+form button
+{
+    background-color: var(--cor-fundo);
+    color: var(--cor-texto);
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+form button:hover
+{
+    background-color: var(--cor-destaque);
+}
+
+form button:active
+/*active serve para indicar o elemento que está sendo clicado, ele é considerado um pseudo-elemento */
+{
+    background-color: var(--cor-destaque);
+    transform: scale(0.98);
+}
